@@ -7,8 +7,8 @@ var users = [];
 var app = express();  // created an instance of express
 var server = http.Server(app); //function server creates an http server and in paramter here it told http handler to handle all the req.
 var io = socket(server);
-// const ipaddress ='10.7.26.121';
-const ipaddress ='10.7.4.71';
+// write your IP address below to use Two different system that are connected to same network
+const ipaddress ='localhost';
 const PORT = process.env.PORT || 3333;
 server.listen(PORT, () => console.log(`Server is up and running on ${ipaddress}:${PORT}`));
 
